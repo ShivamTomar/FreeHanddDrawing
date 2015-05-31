@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/rbg_width"
+        style="@style/rb_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@integer/options_margin_left"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioButton
+            android:id="@+id/rb_large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/large" />
+
+        <RadioButton
+            android:id="@+id/rb_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/middle" />
+
+        <RadioButton
+            android:id="@+id/rb_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Small" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_bg_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rbg_width"
+        android:layout_marginLeft="10dp"
+        android:text="@string/select_bg_color" />
+
+    <Spinner
+        android:id="@+id/spineer_bg_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbg_width"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_bg_color" />
+
+    <TextView
+        android:id="@+id/tv_fg_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spineer_bg_color"
+        android:layout_marginLeft="10dp"
+        android:text="@string/select_drawing_color" />
+
+    <Spinner
+        android:id="@+id/spineer_fg_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spineer_bg_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_fg_color" />
+    
+    <com.shivam.freehanddrawing.views.DrawingView
+        android:id="@+id/id_drawing_view"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/spineer_fg_color"
+        />
+
+</RelativeLayout>

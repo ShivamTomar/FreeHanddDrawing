@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <item name="android:textColor" type="color">@android:color/white</item>
+    <item name="android:gravity" type="string">center</item>
+    <style name="rb_style">
+        
+    </style>
+
+</resources>

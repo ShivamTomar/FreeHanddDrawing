@@ -1,0 +1,2 @@
+D:\Workspace-studio\FreeHanddDrawing_eclipse1\app\build\intermediates\classes\debug
+D:\Workspace-studio\FreeHanddDrawing_eclipse1\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-fde43af261b5301dae6d9fa1448a146d0cab76a0.jar
